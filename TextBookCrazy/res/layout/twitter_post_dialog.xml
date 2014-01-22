@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:paddingTop="20dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/a3333" >
+
+        <LinearLayout
+            android:id="@+id/layout_back"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/item_selectable"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/a2222" />
+
+            <ImageView
+                android:id="@+id/iv_tw_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/a1111" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_tweet"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_tweet_selector"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text="Tweet"
+            android:textColor="#0000CD"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_text_share"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="left" />
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pj="http://schemas.android.com/apk/res/com.cnc.textbookcrazy"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/lo_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical" >
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/icon" -->
+        <!-- android:layout_width="60dp" -->
+        <!-- android:layout_height="60dp" -->
+        <!-- android:scaleType="fitCenter" -->
+        <!-- android:src="@drawable/icon_user" /> -->
+
+        <com.cnc.textbookcrazy.help.MLRoundedImageView
+            android:id="@+id/avatar_2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_launcher"
+            pj:size_border="4"
+            pj:color="#0f5344" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Me"
+            android:textColor="#04b68e"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <!-- <RelativeLayout -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_centerVertical="true" -->
+    <!-- android:layout_marginRight="10dp" -->
+    <!-- android:layout_marginTop="10dp" -->
+    <!-- android:layout_toRightOf="@+id/lo_left" -->
+    <!-- android:background="@drawable/edt_chat_me" > -->
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/lo_left"
+        android:background="@drawable/edt_chat_me"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:text="hello" />
+
+</RelativeLayout>

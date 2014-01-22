@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/bgr_item_mypost" >
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/icon_book" -->
+        <!-- android:layout_width="80dp" -->
+        <!-- android:layout_height="120dp" -->
+        <!-- android:layout_margin="5dp" -->
+        <!-- android:background="@drawable/icon_book" -->
+        <!-- android:scaleType="fitXY" /> -->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp" >
+
+            <ImageView
+                android:layout_width="82dp"
+                android:layout_height="124dp"
+                android:background="@drawable/bound_icon_book"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/icon_book"
+                android:layout_width="80dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/icon_book"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_bookname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Present"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_author_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Steven"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="20$"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

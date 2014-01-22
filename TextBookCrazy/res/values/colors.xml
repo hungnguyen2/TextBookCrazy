@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="yellow">#ffff00</color>
+    <color name="bgr_item_mypost">#faf0cf</color>
+    <color name="bgr_list">#042b22</color>
+    <color name="item_selected">#2f7d99</color>
+    <color name="backgroud">#262627</color>
+
+</resources>

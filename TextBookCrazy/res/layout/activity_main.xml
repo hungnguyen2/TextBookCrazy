@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/topbar" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/yellow"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/btn_cross"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/btn_refresh_2"
+            android:background="@drawable/cross"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/btn_refresh_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_refresh_2"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_me"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_pager_unselected"
+            android:text="@string/me"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_pager_unselected"
+            android:text="@string/buy"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_sell"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_pager_unselected"
+            android:text="@string/sell"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/fragment_me"
+        android:name="com.cnc.textbookcrazy.view.MeFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_buy"
+        android:name="com.cnc.textbookcrazy.view.BuyFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_sell"
+        android:name="com.cnc.textbookcrazy.view.SellFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </fragment>
+
+</LinearLayout>
